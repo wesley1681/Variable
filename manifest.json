@@ -1,0 +1,8 @@
+{
+    "display_name": "Variable",
+    "author": "wesley1681",
+    "version": "0.0.1",
+    "description": "A simple extension to test loading.",
+    "js": "index.js",
+    "homePage": "https://github.com/wesley1681/Variable"
+}
