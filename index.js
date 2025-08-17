@@ -140,6 +140,7 @@ function handleChatUpdate() {
 
 // 註冊我們的監聽器
 eventSource.on(event_types.MESSAGE_RECEIVED, onMessageReceived); // ★ 使用我們新的、更強大的函式
+eventSource.on(event_types.MESSAGE_EDITED, onMessageReceived);   // 當手動編輯訊息時，重新計算
 eventSource.on(event_types.MESSAGE_EDITED, handleChatUpdate);   // 當手動編輯訊息時，重新計算
 eventSource.on(event_types.CHAT_CHANGED, handleChatUpdate);     // 切換聊天時，重新計算
 eventSource.on(event_types.CHAT_LOADED, handleChatUpdate);       // 載入存檔時，重新計算
